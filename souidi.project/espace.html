@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ID-BENADI AHMED AMINE">
+    <meta name="description" content="this project finel">
+    <title>FSR</title>
+    <link rel="stylesheet" href="css/espace.css">
+    <link rel="icon" href="icons/building.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script ></script>
+</head>
+<body>
+    <!-- nav  -->
+    <div class="nav">
+        <div class="container">
+            <div class="header">
+                <div class="iconlogo">
+                    <a href="index.html"><img src="img/FS-Rabat-agdal-removebg-preview.png" alt="FSR" width="60px"></a>
+                    <img src="icons/hashtag.png" alt="tag" width="20px"><span>950</span>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <a href="index.html" >Home</a>
+                        </li>
+                        <li>
+                            <a href="espace.html" class="active ">Espace ETD</a>
+                        </li>
+                        <li>
+                            <a href="Cours.html">Cours</a>
+                        </li>
+                       
+                        <li>
+                            <a href="Contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login  -->
+    <div class="login-box">
+        <div class="container">
+            <img src="img/download-removebg-preview.png" alt="photo" id="fsrphoto">
+        <h2>Espace ETD </h2>
+       
+        <div class="img">
+            <img src="img/person-blue-shirt.png" alt="" class="personne">
+        </div>
+        <div class="box">
+            <h3>Hello, There. </h3> 
+            <div class="fsr">
+            <img src="img/FS-Rabat-agdal-removebg-preview.png" alt="icon" >
+        </div>
+            <form >
+                <label for="eml">Email: <img src="icons/mail.png" alt="email" width="15px"> </label>
+                <input type="email " id="eml" maxlength="30" minlength="10" required placeholder="write your email " ><br>
+                <label for="pass" >Password:</label>
+                <input type="password" required placeholder="********" minlength="8" maxlength="12" id="pass"><br>
+                <a href="#" id="idont" onclick="
+                alert('Sorry, I can not help you. You must contact the administration of the faculty. Thank you for your understanding. ');
+                ">I'dont have Email.</a><br>
+                <input type="checkbox" name="right " id="ow" ><span>I accepte the conditions. </span><br>
+                <input type="submit" value="Login" onclick="
+                    if ((document.getElementById('ow').checked == false) ) {
+                        alert('You must accept the right to continue. Thank you for your understanding. ');
+                    }
+                    else{
+                        window.location.href='Cours.html';
+                    }
+                    
+                ">
+                
+            </form>
+
+        </div>
+    </div>
+    </div>
+    <!-- footer  -->
+    <div class="footer">
+        <div class="dtl">
+            <div class="dtl1">
+                <h2>FSR : </h2>
+                <p>Faculté des Sciences Rabat</p>
+                <p>Adresse : Avenue Ibn Battouta, Rabat 10100</p>
+                <p>Téléphone : 0537 77 88 00</p>
+                <p>Fax : 0537 77 88 01</p>
+                <p>Email :
+        </div>
+        <div class="dtl2">
+            <h3>Liens utiles: </h3>
+               <a href="">Accueil</a><br>
+                <a href="">Espace ETD</a><br>
+              <a href="">Cours</a><br>
+                <a href="">News</a><br>
+                <a href="">Contact Us</a><br>
+            <p>&copy;copyright 2023/24</p>
+        </div>
+        <p>bild by ID-BENADI AHMED AMINE  </p>
+        <p>Superviseur by  Pr suidi </p>
+        
+    </div>
+</body>
+</html>

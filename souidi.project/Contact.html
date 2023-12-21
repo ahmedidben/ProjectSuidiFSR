@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ID-BENADI AHMED AMINE">
+    <meta name="description" content="this project finel">
+    <title>FSR</title>
+    <link rel="stylesheet" href="css/Contact.css">
+    <link rel="icon" href="icons/building.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script ></script>
+</head>
+<body>
+    <!-- nav  -->
+    <div class="nav">
+        <div class="container">
+            <div class="header">
+                <div class="iconlogo">
+                    <a href="index.html"><img src="img/FS-Rabat-agdal-removebg-preview.png" alt="FSR" width="60px"></a>
+                    <img src="icons/hashtag.png" alt="tag" width="20px"><span>950</span>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="espace.html">Espace ETD</a>
+                        </li>
+                        <li>
+                            <a href="Cours.html">Cours</a>
+                        </li>
+                        
+                        <li>
+                            <a href="Contact.html"  class="active" >Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact  -->
+    <div class="contact">
+        <h2>Contact US</h2>
+        <div class="container">
+            <div class="all">
+            <div class="box">
+                <div class="box1">
+                    <div>
+                        <h3>Contact Us</h3>
+                        <p>What can we help you with? Please provide us as much detail as you can so we can give you the best help possible!</p>
+                    </div>
+                    <form action="">
+                        <label for="subject">Subject : </label>
+                        <input type="text" required minlength="8" > <br>
+                        <label for="Full Name"> Full Name: </label>
+                        <input type="text" id="Full Name" required minlength="8" > <br>
+                        <label for="Email">Email: </label>
+                        <input type="email" required minlength="8" > <br>
+                        <label for="pro">programme:</label>
+                        <select name="program" id="pro">
+                            <option value="1">SMIA</option>
+                            <option value="2">SMPC</option>
+                            <option value="3" selected>SMI</option>
+                            <option value="4">SMA</option>
+                            <option value="5">SMP</option>
+                            <option value="6">SMC</option>
+                        </select> <br>
+                    <label id="cent" for="Message">Describe the Issue:</label>
+                    <textarea id="Message" name="" id="" cols="30" rows="10" required minlength="8"></textarea> <br>
+                    <div class="condition">
+                        <input type="checkbox" required>
+                        <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+                    </div>
+                    <button onclick="
+                        let y = document.getElementById('Full Name').value;
+                        if(y.length<1){
+                            alert('please enter your name');
+                        }
+                        else{
+                        alert('Thank you '+y+' for your message');}
+                    ">send message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="box2">
+                <pre>we are here for helping you <span><img src="icons/help.png" alt="photo" width="60px"></span></pre> 
+                    
+            </div>
+            <img  id="logo" src="img/FS-Rabat-agdal-removebg-preview.png" alt="">
+        </div>
+    </div>
+    </div>
+    <!-- footer  -->
+    <div class="footer">
+        <div class="dtl">
+            <div class="dtl1">
+                <h2>FSR : </h2>
+                <p>Faculté des Sciences Rabat</p>
+                <p>Adresse : Avenue Ibn Battouta, Rabat 10100</p>
+                <p>Téléphone : 0537 77 88 00</p>
+                <p>Fax : 0537 77 88 01</p>
+                <p>Email :
+        </div>
+        <div class="dtl2">
+            <h3>Liens utiles: </h3>
+               <a href="">Accueil</a><br>
+                <a href="">Espace ETD</a><br>
+              <a href="">Cours</a><br>
+                <a href="">News</a><br>
+                <a href="">Contact Us</a><br>
+            <p>&copy;copyright 2023/24</p>
+        </div>
+        <p>bild by ID-BENADI AHMED AMINE  </p>
+        <p>Superviseur by  Pr suidi </p>
+        
+    </div>
+</body>
+</html>
